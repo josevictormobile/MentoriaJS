@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercício</title>
+  </head>
+  <body>
+    <label>Digite uma mensagem de encorajamento: </label>
+    <br><br>
+    <input id="mensagem" type="text">
+    <button onclick="mostraMsg()">Exibir</button>
+  </body>
+  <script>
+    function mostraMsg(){
+        let input = document.getElementById("mensagem");
+        
+        alert(input.value);
+        input.value = "";
+    }
+  </script>
+</html>
